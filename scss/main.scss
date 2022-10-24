@@ -1,0 +1,15 @@
+@use 'animations';
+@use 'variables';
+
+    
+body {
+    background-color: $background-color;
+    color: $fg-text-color;
+}
+
+
+.fade-in {
+    animation-name: fade_in;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
