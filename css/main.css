@@ -1,0 +1,56 @@
+body {
+  overflow-x: hidden;
+  background-color: #222;
+  color: #FFF;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+.main-title {
+  position: relative;
+  font-size: 1000%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  left: 10%;
+  top: 15%;
+}
+
+.title-description {
+  position: relative;
+  left: 10%;
+  font-size: 150%;
+}
+
+.side-img {
+  position: relative;
+  float: right;
+  border-radius: 50%;
+  right: 5%;
+  margin-top: 1%;
+}
+
+.learn-more-btn {
+  position: relative;
+  border-radius: 25px;
+  padding: 1% 2%;
+  font-size: 250%;
+  transition-duration: 250ms;
+  left: 10%;
+  margin-top: 5%;
+  color: white;
+  background-color: #333;
+  border: 0;
+}
+.learn-more-btn:hover {
+  /*font-size: 270%;*/
+  box-shadow: 2px 5px rgb(17, 17, 17);
+  left: 9.5%;
+  margin-top: 4.5%;
+}
+
+.fade-in {
+  -webkit-animation-name: fade_in;
+          animation-name: fade_in;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}/*# sourceMappingURL=main.css.map */
