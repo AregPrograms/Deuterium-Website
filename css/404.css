@@ -2,8 +2,6 @@
   width: 50%;
   height: 50%;
   background-color: black;
+  padding: 1%;
+  white-space: nowrap;
 }
-
-.not-found-header-text {
-  font-size: 500%;
-}/*# sourceMappingURL=404.css.map */
