@@ -10,7 +10,7 @@ function start_404_animation() {
     var del_dir = document.getElementById("first-command-text"); // i have renamed this 2 times because of Cannot redeclare block-scoped variable error
     del_dir
         ? (del_dir.innerText =
-            "C:\\getdeuterium-win> dt dd " + document.location.host)
+            "C:\\getdeuterium-win> dt dd " + document.location.host + document.location.pathname)
         : null;
     setTimeout(function () {
         var dir_removed = document.createElement("li");
