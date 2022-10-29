@@ -7,9 +7,15 @@
     white-space: nowrap;
     border-radius: 50px;
     height: 400px;
+    font-family: monospace;
+    letter-spacing: -1px;
      
     & ul {
         list-style: none;
+
+        & li {
+            margin-bottom: 15px;
+        }
     }
 }
 

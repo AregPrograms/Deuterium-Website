@@ -1,4 +1,6 @@
 function auto_set_frame_size(frame, resize_obj) {
+    console.log(resize_obj.getBoundingClientRect());
+    console.log(frame.getBoundingClientRect());
     if (resize_obj.getBoundingClientRect().width >
         frame.getBoundingClientRect().width) {
         frame.style.width = (resize_obj.getBoundingClientRect().width + 15).toString();
@@ -12,6 +14,9 @@ function start_404_animation() {
         ? (del_dir.innerText =
             "C:\\getdeuterium-win> dt dd " + document.location.host + document.location.pathname)
         : null;
+    last_message = del_dir;
+    auto_set_frame_size(document.getElementById("console"), last_message);
+    console.log("auto readjust");
     setTimeout(function () {
         var dir_removed = document.createElement("li");
         dir_removed.innerHTML = "<h3>Directory successfully removed.</h3>";

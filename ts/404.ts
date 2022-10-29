@@ -1,4 +1,7 @@
 function auto_set_frame_size(frame: HTMLElement, resize_obj: HTMLElement) {
+    console.log(resize_obj.getBoundingClientRect())
+    console.log(frame.getBoundingClientRect())
+
     if (
         resize_obj.getBoundingClientRect().width >
         frame.getBoundingClientRect().width
@@ -20,6 +23,8 @@ function start_404_animation() {
         ? (del_dir.innerText =
               "C:\\getdeuterium-win> dt dd " + document.location.host + document.location.pathname)
         : null;
+
+    last_message = del_dir;
 
     setTimeout(() => {
         let dir_removed = document.createElement("li");
