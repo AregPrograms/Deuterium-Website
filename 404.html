@@ -1,170 +1,220 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-      name="description"
-      content="Give your terminal wings with Deuterium using 2 letter commands"
-    />
-    <meta name="author" content="Deuterium" />
+        <meta
+            name="description"
+            content="Give your terminal wings with Deuterium using 2-4 letter commands"
+        />
+        <meta name="author" content="Deuterium" />
+        <meta
+            name="keywords"
+            content="CMD, Command Prompt, Bash, Shell, Filesystem, Unix, Linux, Mac, MacOS, Windows, Windows 10, Windows 11"
+        />
 
-    <title>Deuterium</title>
+        <!-- Open Graph Protocol -->
 
-    <!-- Bootstrap5 -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Deuterium" />
+        <meta
+            property="og:description"
+            content="Give your terminal wings with Deuterium using 2-4 letter commands"
+        />
+        <meta
+            property="og:image"
+            content="https://raw.githubusercontent.com/AregPrograms/Deuterium/main/gfx/dark.png"
+        />
+        <meta property="og:url" content="https://www.getdeuterium.win" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+        <!-- End of Open Graph Protocol -->
 
-    <!-- End of Boostrap5 -->
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/404.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index">Deuterium</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about">About</a>
-            </li>
+        <!-- Twitter Meta Tags -->
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="/social"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Social Links
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-dark"
-                aria-labelledby="navbarDropdown"
-              >
-                <li><div class="text-center">Social</div></li>
+        <meta name="twitter:title" content="Deuterium" />
+        <meta
+            name="twitter:description"
+            content="Give your terminal wings with Deuterium using 2-4 letter commands"
+        />
+        <meta
+            name="twitter:image"
+            content="https://raw.githubusercontent.com/AregPrograms/Deuterium/main/gfx/dark.png"
+        />
 
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <div class="text-center">
-                    <a
-                      class="dropdown-item"
-                      href="https://discord.gg/eV3JRT2N4W"
-                      target="_blank"
-                      ><b>Discord</b></a
-                    >
-                  </div>
-                </li>
-              </ul>
-            </li>
+        <!-- End of Twitter Meta Tags -->
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="/about"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Download
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-dark"
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <a class="dropdown-item text-center" href="./downloads"
-                    >Downloads</a
-                  >
-                </li>
+        <title>Deuterium</title>
 
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <div class="text-center"><b>Windows</b></div>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">x64 Installer (64-bit)</a>
-                  <a class="dropdown-item" href="#">x86 Installer (32-bit)</a>
-                </li>
+        <!-- Bootstrap5 -->
 
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <div class="text-center"><b>Linux</b></div>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">None</a>
-                </li>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"
+        ></script>
 
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <div class="text-center"><b>Mac</b></div>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">None</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        <!-- End of Boostrap5 -->
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/404.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index">Deuterium</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="./index"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about">About</a>
+                        </li>
 
-    <!--
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="/social"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Social Links
+                            </a>
+                            <ul
+                                class="dropdown-menu dropdown-menu-dark"
+                                aria-labelledby="navbarDropdown"
+                            >
+                                <li><div class="text-center">Social</div></li>
+
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <div class="text-center">
+                                        <a
+                                            class="dropdown-item"
+                                            href="https://discord.gg/eV3JRT2N4W"
+                                            target="_blank"
+                                            ><b>Discord</b></a
+                                        >
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="/about"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Download
+                            </a>
+                            <ul
+                                class="dropdown-menu dropdown-menu-dark"
+                                aria-labelledby="navbarDropdown"
+                            >
+                                <li>
+                                    <a
+                                        class="dropdown-item text-center"
+                                        href="./downloads"
+                                        >Downloads</a
+                                    >
+                                </li>
+
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <div class="text-center">
+                                        <b>Windows</b>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >x64 Installer (64-bit)</a
+                                    >
+                                    <a class="dropdown-item" href="#"
+                                        >x86 Installer (32-bit)</a
+                                    >
+                                </li>
+
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <div class="text-center"><b>Linux</b></div>
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">None</a>
+                                </li>
+
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <div class="text-center"><b>Mac</b></div>
+                                </li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">None</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--
         Main site content below
       -->
 
-    <h1 class="text-center not-found-text">404</h1>
-    <div class="text-center not-found-info">Looks like this file wasn't found on the server. 💀</div>
-    <br>
-    <br>
+        <h1 class="text-center not-found-text">404</h1>
+        <div class="text-center not-found-info">
+            Looks like this file wasn't found on the server. 💀
+        </div>
+        <br />
+        <br />
 
-    <div class="d-flex justify-content-center">
-      <div class="console" id="console">
-        <ul id="console-messages">
-          <li>
-            <h3 id="first-command-text">
-              C:\getdeuterium-win> dt dd {WEBSITE_PATH}
-            </h3>
-          </li>
-        </ul>
-      </div>
-    </div>
+        <div class="d-flex justify-content-center">
+            <div class="console" id="console">
+                <ul id="console-messages">
+                    <li>
+                        <h3 id="first-command-text">
+                            C:\getdeuterium-win> dt dd {WEBSITE_PATH}
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <script src="./js/404.js"></script>
-  </body>
+        <script src="./js/404.js"></script>
+    </body>
 </html>
