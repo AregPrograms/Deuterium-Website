@@ -3,5 +3,41 @@
     height: 50%;
     background-color: black;
     padding: 1%;
+    padding-bottom: 0.5%;
     white-space: nowrap;
+    border-radius: 50px;
+    height: 400px;
+     
+    & ul {
+        list-style: none;
+    }
+}
+
+@keyframes blink {
+    0% {
+        border-right: 5px solid white;
+    }
+
+    100% {
+        border-right: 0;
+    }
+}
+
+.blinking-right {
+    display: inline-block;
+    padding-right: 15px;
+    border-right: 5px solid white;
+
+    animation: blink;
+    animation-duration: 2s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+.not-found-text {
+    font-size: 200px;
+}
+
+.not-found-info {
+    font-size: 30px;
 }

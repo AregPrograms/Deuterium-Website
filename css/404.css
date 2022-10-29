@@ -3,5 +3,50 @@
   height: 50%;
   background-color: black;
   padding: 1%;
+  padding-bottom: 0.5%;
   white-space: nowrap;
+  border-radius: 50px;
+  height: 400px;
 }
+.console ul {
+  list-style: none;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    border-right: 5px solid white;
+  }
+  100% {
+    border-right: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-right: 5px solid white;
+  }
+  100% {
+    border-right: 0;
+  }
+}
+.blinking-right {
+  display: inline-block;
+  padding-right: 15px;
+  border-right: 5px solid white;
+  -webkit-animation: blink;
+          animation: blink;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: steps(2);
+          animation-timing-function: steps(2);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.not-found-text {
+  font-size: 200px;
+}
+
+.not-found-info {
+  font-size: 30px;
+}/*# sourceMappingURL=404.css.map */
