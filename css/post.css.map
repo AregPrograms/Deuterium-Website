@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"post.css"}
+{"version":3,"sources":["../scss/post.scss","post.css"],"names":[],"mappings":"AAAA;EACI,gBAAA;EACA,qGAAA;EAGA,kBAAA;EAGA,0BAAA;ACHJ;;ADMA;EACI,kBAAA;EAEA,eAAA;EAEA,0BAAA;ACLJ","file":"post.css"}

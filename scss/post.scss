@@ -1,0 +1,55 @@
+.post-title {
+    font-size: 500%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+
+    text-align: center;
+
+    transition-duration: 250ms;
+}
+
+.post-description {
+    text-align: center;
+
+    font-size: 150%;
+
+    transition-duration: 250ms;
+}
+
+.post-content {
+    font-size: 125%;
+}
+
+.post-content-container {
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+
+.post-authors-title {
+    font-size: 125%;
+}
+
+.post-authors {
+    font-size: 150%;
+}
+
+.author-tag {
+    opacity: 0.5;
+}
+
+.by {
+    font-size: 75%;
+}
+
+.post-divider {
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+
+.post-author-divider {
+    position: relative;
+    width: 25%;
+    left: 37.5%;
+}

@@ -49,7 +49,7 @@
         <!-- Tab Design -->
 
         <title>Deuterium Blog</title>
-        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
 
         <!-- End of Tab Design -->
 
@@ -79,7 +79,7 @@
         <script src="../../js/jquery.js"></script>
         <script>
             $(function () {
-                $("#navbar-placeholder").load("navbar.html");
+                $("#navbar-placeholder").load("../../navbar.html");
             });
         </script>
     </head>
@@ -91,28 +91,24 @@
       -->
         <br />
 
-        <h1 class="title">Blogs are released!</h1>
+        <div class="header-container">
+            <h1 class="post-title text-center">Blogs are released!</h1>
 
-        <hr class="mobile-divider" />
+            <hr class="post-divider" />
 
-        <span class="title-description">The official Deuterium Blog!</span>
+            <p class="text-center post-authors">
+                <span class="by">by</span> Areg Harutyunyan
+                <sup class="author-tag">LEAD DEVELOPER</sup>
+            </p>
 
-        <div class="posts-container d-flex justify-content-center">
-            <a href="./posts/1">
-                <div class="card text-white bg-dark mb-3" style="width: 450px">
-                    <div class="card-body">
-                        <h5 class="card-title">Blogs are released!</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">
-                            WEBSITE FEATURES
-                        </h6>
-                        <p class="card-text">
-                            Blogs are finally released! Blogs will add keep
-                            th...
-                        </p>
-                        <button class="btn btn-secondary">Share</button>
-                    </div>
-                </div>
-            </a>
+            <br /><br /><br />
+            <div class="post-content-container">
+                <p class="post-content text-center">
+                    We are happy to say that Deuterium just got a blog! Me (Areg
+                    Harutyunyan) and Jase Williams will post here about upcoming
+                    features, updates, etc..
+                </p>
+            </div>
         </div>
     </body>
 </html>
