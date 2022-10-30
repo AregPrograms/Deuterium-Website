@@ -48,7 +48,7 @@ function start_404_animation() {
             ? (last_message.innerHTML =
                   "<h3>C:\\getdeuterium-win> why are you still on the 404 page lol")
             : null;
-    }, 4000);
+    }, 30000); // 30 seconds
 
     setTimeout(() => {
         last_message?.classList.remove("blinking-right");
@@ -58,7 +58,7 @@ function start_404_animation() {
         messages?.appendChild(final_msg);
 
         last_message = final_msg;
-    }, 60000);
+    }, 60000); // one minute (i think thats obvious though)
 }
 
 start_404_animation();

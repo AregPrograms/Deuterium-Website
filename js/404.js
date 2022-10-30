@@ -15,8 +15,6 @@ function start_404_animation() {
             "C:\\getdeuterium-win> dt dd " + document.location.host + document.location.pathname)
         : null;
     last_message = del_dir;
-    auto_set_frame_size(document.getElementById("console"), last_message);
-    console.log("auto readjust");
     setTimeout(function () {
         var dir_removed = document.createElement("li");
         dir_removed.innerHTML = "<h3>Directory successfully removed.</h3>";
@@ -35,7 +33,7 @@ function start_404_animation() {
             ? (last_message.innerHTML =
                 "<h3>C:\\getdeuterium-win> why are you still on the 404 page lol")
             : null;
-    }, 4000);
+    }, 30000); // 30 seconds
     setTimeout(function () {
         last_message === null || last_message === void 0 ? void 0 : last_message.classList.remove("blinking-right");
         var final_msg = document.createElement("li");
@@ -43,6 +41,6 @@ function start_404_animation() {
         final_msg.classList.add("blinking-right");
         messages === null || messages === void 0 ? void 0 : messages.appendChild(final_msg);
         last_message = final_msg;
-    }, 60000);
+    }, 60000); // one minute (i think thats obvious though)
 }
 start_404_animation();
