@@ -18,6 +18,8 @@ body {
 
     left: 10%;
     top: 15%;
+
+    transition-duration: 250ms;
 }
 
 .title-description {
@@ -25,6 +27,8 @@ body {
     left: 10%;
 
     font-size: 150%;
+
+    transition-duration: 250ms;
 }
 
 .side-img {
@@ -43,7 +47,7 @@ body {
     padding: 10px 12px;
     font-size: 250%;
 
-    transition-duration: 250ms;
+    transition-duration: 50ms;
 
     left: 10%;
     margin-top: 5%;
@@ -67,6 +71,7 @@ body {
 
 .mobile-divider {
     opacity: 0;
+    transition-duration: 250ms;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -75,6 +80,7 @@ body {
         font-size: 500%;
         text-align: center;
         left: 0;
+        transition-duration: 0ms;
     }
 
     .side-img {

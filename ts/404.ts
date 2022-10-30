@@ -21,7 +21,7 @@ function start_404_animation() {
 
     del_dir
         ? (del_dir.innerText =
-              "C:\\getdeuterium-win> dt dd " + document.location.host + document.location.pathname)
+              "C:\\getdeuterium-win> dt dd " + document.location.pathname)
         : null;
 
     last_message = del_dir;

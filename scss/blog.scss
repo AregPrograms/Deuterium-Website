@@ -1,0 +1,50 @@
+.main-blog-title {
+    position: relative;
+    font-size: 500%;
+    text-align: center;
+    left: 0;
+}
+
+.title-description {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 150%;
+}
+
+.fade-in {
+    animation-name: fade_in;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+.mobile-divider {
+    opacity: 0;
+}
+
+.posts-container a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1500px) {
+    .main-blog-title {
+        position: relative;
+        font-size: 500%;
+        text-align: center;
+        left: 0;
+    }
+
+    .mobile-divider {
+        position: relative;
+        opacity: 0.25;
+        width: 50%;
+        left: 25%;
+    }
+}
