@@ -11,6 +11,7 @@
      
     & ul {
         list-style: none;
+        overflow: auto;
 
         & li {
             margin-bottom: 15px;
