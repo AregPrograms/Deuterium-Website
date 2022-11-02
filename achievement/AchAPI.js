@@ -36,10 +36,6 @@ function displayAchievements(achID = 0) {
 
     let achJSON = getAchievement(achID);
 
-    //create animation
-    //that makes box slide in from top left corner
-    //and then slide out after 5 seconds
-
     //create box
     let achBox = document.createElement("div");
     achBox.id = "achBox";
@@ -71,12 +67,6 @@ function displayAchievements(achID = 0) {
     achBox.appendChild(achTitle);
     achBox.appendChild(achDesc);
 
-    //make animation
-    let achAnim = new Animation(achBox, "top", "0px", "-100px", 0.5, "ease-in-out");
-
     //append box to body
     document.body.appendChild(achBox);
-
-    //start animation
-    achAnim.start();
 }
