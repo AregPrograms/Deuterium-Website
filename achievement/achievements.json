@@ -1,0 +1,19 @@
+{
+    "0": {
+        "name": "Null",
+        "description": "Your mind goes numb. What are you looking at?",
+        "image": "/achievement/achImg/0.png"
+    },
+
+    "1": {
+        "name": "Acheivement Not Found",
+        "description": "Tried to access a non-existent webpage",
+        "image": "https://i.imgur.com/1ZQZ1Xy.png"
+    },
+
+    "2": {
+        "name": "Want a break from the ads?",
+        "description": "Use an adblocker (Real)",
+        "image": "https://i.imgur.com/1ZQZ1Xy.png"
+    }
+}
