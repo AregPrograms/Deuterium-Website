@@ -16,17 +16,17 @@ function start_404_animation() {
     let last_message: HTMLElement | null;
 
     const messages = document.getElementById("console-messages");
-    const del_dir: HTMLElement | null =
+    const start_msg: HTMLElement | null =
         document.getElementById("first-command-text"); // i have renamed this 2 times because of Cannot redeclare block-scoped variable error
 
-    del_dir
-        ? (del_dir.innerText =
+    start_msg
+        ? (start_msg.innerText =
               " - DeuTerium Site [Version on.e.billi.on!!]\n" +
-              " - (:]) DeuTerium non-corperation.\n\n" +
+              " - (:]) DeuTerium non-corporation.\n\n" +
               "C:\\getdeuterium-win> dt dd " + document.location.pathname)
         : null;
 
-    last_message = del_dir;
+    last_message = start_msg;
 
     setTimeout(() => {
         let dir_removed = document.createElement("li");

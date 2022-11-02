@@ -9,14 +9,14 @@ function auto_set_frame_size(frame, resize_obj) {
 function start_404_animation() {
     var last_message;
     var messages = document.getElementById("console-messages");
-    var del_dir = document.getElementById("first-command-text"); // i have renamed this 2 times because of Cannot redeclare block-scoped variable error
-    del_dir
-        ? (del_dir.innerText =
+    var start_msg = document.getElementById("first-command-text"); // i have renamed this 2 times because of Cannot redeclare block-scoped variable error
+    start_msg
+        ? (start_msg.innerText =
             " - DeuTerium Site [Version on.e.billi.on!!]\n" +
-                " - (:]) DeuTerium non-corperation.\n\n" +
+                " - (:]) DeuTerium non-corporation.\n\n" +
                 "C:\\getdeuterium-win> dt dd " + document.location.pathname)
         : null;
-    last_message = del_dir;
+    last_message = start_msg;
     setTimeout(function () {
         var dir_removed = document.createElement("li");
         dir_removed.innerHTML = "<h3>Directory successfully removed.</h3>";
