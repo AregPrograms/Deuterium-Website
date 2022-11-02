@@ -1,4 +1,10 @@
 {
+    "0": {
+        "name": "Null",
+        "description": "Your mind goes numb. What are you looking at?",
+        "image": "/achievement/achImg/0.png"
+    },
+
     "1": {
         "name": "Acheivement Not Found",
         "description": "Tried to access a non-existent webpage",
