@@ -12,7 +12,9 @@ function start_404_animation() {
     var del_dir = document.getElementById("first-command-text"); // i have renamed this 2 times because of Cannot redeclare block-scoped variable error
     del_dir
         ? (del_dir.innerText =
-            "C:\\getdeuterium-win> dt dd " + document.location.pathname)
+            " - DeuTerium Site [Version on.e.billi.on!!]\n" +
+                " - (:]) DeuTerium non-corperation.\n\n" +
+                "C:\\getdeuterium-win> dt dd " + document.location.pathname)
         : null;
     last_message = del_dir;
     setTimeout(function () {

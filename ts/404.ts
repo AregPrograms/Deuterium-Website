@@ -21,6 +21,8 @@ function start_404_animation() {
 
     del_dir
         ? (del_dir.innerText =
+              " - DeuTerium Site [Version on.e.billi.on!!]\n" +
+              " - (:]) DeuTerium non-corperation.\n\n" +
               "C:\\getdeuterium-win> dt dd " + document.location.pathname)
         : null;
 
