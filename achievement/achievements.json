@@ -7,13 +7,13 @@
 
     "1": {
         "name": "Acheivement Not Found",
-        "description": "Tried to access a non-existent webpage",
-        "image": "https://i.imgur.com/1ZQZ1Xy.png"
+        "description": "Tried to access a non-existent webpage.",
+        "image": "/achievement/achImg/1.png"
     },
 
     "2": {
         "name": "Want a break from the ads?",
         "description": "Use an adblocker (Real)",
-        "image": "https://i.imgur.com/1ZQZ1Xy.png"
+        "image": "/achievement/achImg/2.png"
     }
 }

@@ -44,7 +44,7 @@ function displayAchievements(achID = 0) {
     achBox.style.left = "0px";
     achBox.style.width = "300px";
     achBox.style.height = "100px";
-    achBox.style.backgroundColor = "white";
+    achBox.style.backgroundColor = "#555555";
     achBox.style.border = "1px solid black";
     achBox.style.borderRadius = "5px";
     achBox.style.padding = "10px";
@@ -53,7 +53,7 @@ function displayAchievements(achID = 0) {
 
     //create title
     let achTitle = document.createElement("h3");
-    achTitle.innerHTML = achJSON.title;
+    achTitle.innerHTML = achJSON.name;
     achTitle.style.margin = "0px";
     achTitle.style.padding = "0px";
 
@@ -69,4 +69,9 @@ function displayAchievements(achID = 0) {
 
     //append box to body
     document.body.appendChild(achBox);
+
+    //remove box after 5 seconds
+    setTimeout(function() {
+        document.body.removeChild(achBox);
+    }, 5000);
 }
