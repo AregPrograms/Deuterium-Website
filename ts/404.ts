@@ -19,11 +19,19 @@ function start_404_animation() {
     const start_msg: HTMLElement | null =
         document.getElementById("first-command-text"); // i have renamed this 2 times because of Cannot redeclare block-scoped variable error
 
+    let prefix = "";
+
+    if (navigator.platform.indexOf("Win") === 0) {
+        prefix = "C:\\getdeuterium-win>";
+    } else if (navigator.platform.indexOf("Mac") === 0 || navigator.platform.indexOf("Linux") === 0 || navigator.platform.indexOf("iPhone") === 0) {
+        prefix = "deuterium@deuterium:/tmp/getdeuterium-win $";
+    }
+
     start_msg
         ? (start_msg.innerText =
-              " - DeuTerium Site [Version on.e.billi.on!!]\n" +
-              " - (:]) DeuTerium non-corporation.\n\n" +
-              "C:\\getdeuterium-win> dt dd " + document.location.pathname)
+              "Deuterium Website [Version 4.0.4]\n" +
+              "Deuterium non-corporation 😢.\n\n" +
+              `${prefix} ` + document.location.pathname)
         : null;
 
     last_message = start_msg;
