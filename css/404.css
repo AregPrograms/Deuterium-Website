@@ -1,7 +1,7 @@
 .console {
   width: 50%;
   height: 50%;
-  background-color: black;
+  background: linear-gradient(146deg, #000, #141414);
   padding: 1%;
   padding-bottom: 0.5%;
   border-bottom-left-radius: 25px;
@@ -24,8 +24,8 @@
 .terminal-top {
   position: relative;
   font-size: 250%;
-  background-color: white;
-  color: black;
+  background: linear-gradient(45deg, #111, #141414);
+  color: white;
   width: 50%;
   left: 25%;
   border-top-left-radius: 25px;
