@@ -1,9 +1,16 @@
+//when page loads add achievements.css to the page
+window.addEventListener("load", function() {
+    let link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "https://www.getdeuterium.win/css/achievements.css";
+    document.head.appendChild(link);
+});
 
 function getAchievements() {
     //get all acheivements from achievements.json
     //return acheivements
 
-    fetch('achievement/achievements.json')
+    fetch('https://www.getdeuterium.win/achievement/achievements.json')
         .then(response => response.json())
         .then(data => {
             this.acheivements = data;
@@ -19,7 +26,7 @@ function getAchievement(id = undefined) {
     if (id == undefined) {
         return null;
     } else {
-        fetch('achievement/achievements.json')
+        fetch('https://www.getdeuterium.win/achievement/achievements.json')
             .then(response => response.json())
             .then(data => {
                 this.acheivements = data;
@@ -36,32 +43,24 @@ function displayAchievements(achID = 0) {
 
     let achJSON = getAchievement(achID);
 
+    //if achID is invalid, set it to 0
+    if (achJSON == null) {
+        achJSON = getAchievement(0);
+    }
+
     //create box
     let achBox = document.createElement("div");
     achBox.id = "achBox";
-    achBox.style.position = "absolute";
-    achBox.style.top = "0px";
-    achBox.style.left = "0px";
-    achBox.style.width = "300px";
-    achBox.style.height = "100px";
-    achBox.style.backgroundColor = "#555555";
-    achBox.style.border = "1px solid black";
-    achBox.style.borderRadius = "5px";
-    achBox.style.padding = "10px";
-    achBox.style.boxShadow = "0px 0px 5px 0px black";
-    achBox.style.zIndex = "1000";
 
     //create title
     let achTitle = document.createElement("h3");
+    achTitle.id = "achTitle";
     achTitle.innerHTML = achJSON.name;
-    achTitle.style.margin = "0px";
-    achTitle.style.padding = "0px";
 
     //create description
     let achDesc = document.createElement("p");
+    achDesc.id = "achDesc";
     achDesc.innerHTML = achJSON.description;
-    achDesc.style.margin = "0px";
-    achDesc.style.padding = "0px";
 
     //add title and description to box
     achBox.appendChild(achTitle);
