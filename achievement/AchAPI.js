@@ -2,7 +2,7 @@
 window.addEventListener("load", function() {
     let link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "https://www.getdeuterium.win/achievement/achievements.css";
+    link.href = "https://www.getdeuterium.win/css/achievements.css";
     document.head.appendChild(link);
 });
 
