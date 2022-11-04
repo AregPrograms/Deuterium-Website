@@ -21,7 +21,7 @@ function start_404_animation() {
         ? (start_msg.innerText =
             "Deuterium Website [Version 4.0.4]\n" +
                 "Deuterium non-corporation 😢.\n\n" +
-                "".concat(prefix, " ") + document.location.pathname)
+                "".concat(prefix, " dt dd ") + document.location.pathname)
         : null;
     last_message = start_msg;
     setTimeout(function () {
