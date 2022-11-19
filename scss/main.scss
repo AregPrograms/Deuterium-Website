@@ -54,12 +54,14 @@ nav {
     }
 
     & h3 {
+        margin: 0;
         margin-left: 15px;
         color: white;
+        font-size: 20px;
 
         & a {
             &:hover {
-                font-size: 120%;
+                font-size: 22px;
             }
         }
     }
