@@ -46,12 +46,13 @@ nav a i {
   margin-right: 0;
 }
 nav h3 {
+  margin: 0;
   margin-left: 15px;
   color: white;
   font-size: 20px;
 }
 nav h3 a:hover {
-  font-size: 25px;
+  font-size: 22px;
 }
 nav .nav-title-link {
   color: white;
