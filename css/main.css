@@ -88,9 +88,9 @@ nav button {
 }
 
 .charge {
-  padding-right: 7px;
   font-family: "Bebas Neue", arial;
   transition-duration: 250ms;
+  font-size: 1.25em;
   background: linear-gradient(to right, #f5bc42, #878412);
   background-size: 500% auto;
   -webkit-background-clip: text;
@@ -109,7 +109,7 @@ nav button {
   }
 }
 .charge:hover {
-  font-size: 125%;
+  font-size: 1.4em;
 }
 
 .fade-in {
@@ -119,6 +119,21 @@ nav button {
           animation-duration: 0.5s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+}
+
+.main-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.main-container .title {
+  font-size: 6em;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1200px) {
