@@ -130,6 +130,7 @@ nav button {
   align-items: center;
   justify-content: center;
   height: 100%;
+  text-align: center;
 }
 .main-container .title {
   font-size: 6em;
