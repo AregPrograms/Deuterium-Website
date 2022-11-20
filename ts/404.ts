@@ -24,7 +24,7 @@ function start_404_animation() {
     if (navigator.platform.indexOf("Win") === 0) {
         prefix = "C:\\getdeuterium-win>";
     } else if (navigator.platform.indexOf("Mac") === 0 || navigator.platform.indexOf("Linux") === 0 || navigator.platform.indexOf("iPhone") === 0) {
-        prefix = "deuterium@deuterium:/tmp/getdeuterium-win $";
+        prefix = "deuterium@deuterium /tmp/getdeuterium-win $";
     }
 
     start_msg
@@ -46,7 +46,7 @@ function start_404_animation() {
 
     setTimeout(() => {
         let normal_dir_msg = document.createElement("li");
-        normal_dir_msg.innerHTML = "<h3>C:\\getdeuterium-win>";
+        normal_dir_msg.innerHTML = `<h3>C:\\${prefix}`;
         normal_dir_msg.classList.add("blinking-right");
         messages?.appendChild(normal_dir_msg);
 
@@ -56,19 +56,23 @@ function start_404_animation() {
     setTimeout(() => {
         last_message
             ? (last_message.innerHTML =
-                  "<h3>C:\\getdeuterium-win> why are you still on the 404 page lol")
+                  `${prefix} why are you still on the 404 page lol`)
             : null;
     }, 30000); // 30 seconds
 
     setTimeout(() => {
         last_message?.classList.remove("blinking-right");
         let final_msg = document.createElement("li");
-        final_msg.innerHTML = "<h3>C:\\getdeuterium-win> bro its been one minute 💀";
+        final_msg.innerHTML = `<h3>${prefix} bro its been one minute 💀`;
         final_msg.classList.add("blinking-right");
         messages?.appendChild(final_msg);
 
         last_message = final_msg;
     }, 60000); // one minute (i think thats obvious though)
+
+    setTimeout(() => {
+        window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    }, 180000);
 }
 
 start_404_animation();
