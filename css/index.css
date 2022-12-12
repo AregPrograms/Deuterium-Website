@@ -44,7 +44,11 @@
   justify-content: center;
 }
 .section .main-text .side-left {
-  padding: 100px 400px;
+  display: flex;
+  align-items: top;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 400px;
   padding-right: 0;
   padding-bottom: 0;
 }
