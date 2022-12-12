@@ -9,79 +9,11 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+    margin: 0;
     font-family: "Poppins", arial;
     height: 100%;
     background: $secondary;
     color: white;
-}
-
-nav {
-    font-family: "Poppins", arial;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    position: fixed;
-    gap: 10px;
-    top: 0;
-    left: 0;
-    height: 50px;
-    width: 100%;
-    color: white;
-    background-color: $secondary-dark;
-
-    a {
-        display: flex;
-        align-items: center;
-        transition-duration: 250ms;
-        text-decoration: none;
-        color: white;
-        font-size: 17px;
-        color: grey;
-
-        &:hover {
-            color: white;
-
-            & i {
-                font-size: 100%;
-                margin-right: 5px;
-            }
-        }
-
-        & i {
-            transition-duration: 250ms;
-            font-size: 0;
-            margin-right: 0;
-        }
-    }
-
-    & h3 {
-        margin: 0;
-        margin-left: 15px;
-        color: white;
-        font-size: 20px;
-
-        & a {
-            &:hover {
-                font-size: 22px;
-            }
-        }
-    }
-
-    & .nav-title-link {
-        color: white;
-    }
-
-    & button {
-        font-family: "Poppins", arial;
-        cursor: pointer;
-        margin-right: 15px;
-        background: $primary;
-        padding: 7px 10px;
-        border-radius: 5px;
-        border: 0;
-        color: white;
-    }
 }
 
 .vertical-line {

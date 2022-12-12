@@ -1,0 +1,77 @@
+.window {
+  background: rgba(10, 10, 10, 0.85);
+  border-radius: 15px;
+  width: 500px;
+  height: 300px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+.window .titlebar {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  padding-bottom: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.window .titlebar .left {
+  gap: 5px;
+}
+.window .titlebar .middle {
+  text-align: center;
+  padding: 0;
+  justify-content: center;
+}
+.window .titlebar .middle span {
+  text-align: center;
+}
+.window .titlebar .container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 2em;
+  padding: 0px 20px;
+  width: 33%;
+  color: white;
+  font-size: 1em;
+}
+.window .titlebar .container .titlebar-btn {
+  transition-duration: 100ms;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  border: 0;
+  padding: 0;
+}
+.window .titlebar .container .titlebar-btn:hover {
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.4) inset;
+}
+.window .titlebar .container .minimize {
+  background: #ffbe08;
+}
+.window .titlebar .container .maximize {
+  background: #17ca30;
+}
+.window .titlebar .container .close {
+  background: #ff6245;
+}
+.window .main-content {
+  width: 100%;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+.window .main-content iframe {
+  border-radius: 10px;
+}
+.window .main-content .pre-content {
+  white-space: pre;
+  font-family: monospace;
+}
+.window .main-content .pre-content .green {
+  color: rgb(0, 184, 0);
+}
+.window .main-content .pre-content .blue {
+  color: dodgerBlue;
+}

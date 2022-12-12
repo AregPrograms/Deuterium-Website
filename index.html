@@ -72,8 +72,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-        <link rel="stylesheet" href="./css/main.css" />
-        <link rel="stylesheet" href="./css/cards.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/cards.css" />
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/nav.css">
+        <link rel="stylesheet" href="/css/window.css">
         <script
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3378994353242351"
@@ -95,51 +98,49 @@
         <!--
         Main site content below
       -->
-        <div class="main-container">
-            <h1 class="title">
-                <b>Deuterium <img src="dt.svg" alt="Logo" width="75"></b>
-            </h1>
-            <h3 class="title-description">
-                <span class="charge">SUPERCHARGE</span>
-                your terminal
-            </h3>
+        <div class="website-container">
+            <div class="section section-1">
+                <div class="main-text">
+                    <div class="side side-left">
+                        <h1><b>Deuterium</b></h1>
+                        <h3><b>SUPERCHARGE your terminal</b></h3>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="buttons">
+                            <button class="download-btn">Download 0.0.1</button><button class="download-unstable-btn">Download Latest 0.0.1</button>
+                        </div>
+                    </div>
+                    <div class="side side-right">
+                        <div class="window">
+                            <div class="titlebar">
+                                <div class="container left">
+                                    <button class="maximize titlebar-btn"></button>
+                                    <button class="minimize titlebar-btn"></button>
+                                    <button class="close titlebar-btn"></button>
+                                </div>
+                                <div class="container middle"><span>Terminal</span></div>
+                                <div class="container right"></div>
+                            </div>
+                
+                            <div class="main-content">
+                                <span class="pre-content"><span class="green">deut@deuterium</span>:<span class="blue">~</span>$ dt nd my-new-project
+Directory successfully created.
+<span class="green">deut@deuterium</span>:<span class="blue">~</span>$ cd my-new-project
+<span class="green">deut@deuterium</span>:<span class="blue">~</span>$ dt nf main.c
+File successfully created.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section section-2">
+                    <div class="main-content">
+                        <h1><b>What does Deuterium do?</b></h1>
+                        <h5>Deuterium makes it easier to use the terminal with shorter commands, especially in CMD.</h5>
+                    </div>
+                </div>
 
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <div class="cards" id="cards">
-                <div class="card card-left">
-                    <h1><b>Why Deuterium?</b></h1>
-                    <hr>
-                    <h3>Deuterium is easy to use,<br> install, and has many features</h3>
-                </div>
-                <div class="card" main-card="true">
-                    <h1><b>What is Deuterium?</b></h1>
-                    <hr>
-                    <h3>Deuterium is meant to speed<br> up your workflow with the terminal.</h3>
-                </div>
-                <div class="card card-right">
-                    <h1><b>Simplicity</b></h1>
-                    <hr>
-                    <h3>Deuterium makes long commands into short 2-4 letter commands</h3>
-                </div>
             </div>
-            
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <h1 class="incentive-text">
-                <b>
-                    <u>Our Incentive</u>
-                </b>
-            </h1>
-            <p class="incentive-desc">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis eveniet ipsum natus vero esse inventore ea et, nam voluptate delectus.
-            </p>
         </div>
         
         <script src="./js/cards.js"></script>

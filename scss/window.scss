@@ -1,0 +1,95 @@
+.window {
+    background: rgb(10, 10, 10, 0.85);
+    border-radius: 15px;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 0;
+
+    & .titlebar {
+        display: flex;
+        justify-content: space-between;
+
+        & .left {
+            gap: 5px;
+        }
+
+        height: 40px;
+
+        //background: rgba(15, 15, 15, 0.2);
+        padding-bottom: 10px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+        & .middle {
+            text-align: center;
+            padding: 0;
+            justify-content: center;
+
+            & span {
+                text-align: center;
+            }
+        }
+
+        & .container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 2em;
+            padding: 0px 20px;
+            width: 33%;
+            color: white;
+            font-size: 1em;
+
+            & .titlebar-btn {
+                transition-duration: 100ms;
+                display: block;
+                width: 15px;
+                height: 15px;
+                border-radius: 15px;
+                border: 0;
+                padding: 0;
+
+                &:hover {
+                    box-shadow: 0 0 3px 3px rgb(0, 0, 0, 0.4) inset;
+                }
+            }
+
+            & .minimize {
+                background: #ffbe08;
+            }
+
+            & .maximize {
+                background: #17ca30;
+            }
+
+            & .close {
+                background: #ff6245;
+            }
+        }
+    }
+
+    & .main-content {
+        width: 100%;
+        padding: 10px;
+        padding-top: 0;
+        padding-bottom: 5px;
+
+        & iframe {
+            border-radius: 10px;
+        }
+
+        & .pre-content {
+            white-space: pre;
+            font-family: monospace;
+
+            & .green {
+                color: rgb(0, 184, 0);
+            }
+
+            & .blue {
+                color: dodgerBlue;
+            }
+        }
+    }
+}

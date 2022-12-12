@@ -1,0 +1,85 @@
+.website-container {
+  position: relative;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1534996858221-380b92700493?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwzfHxlYXJ0aHxlbnwwfHx8fDE2NzA1MjYxMTk&ixlib=rb-4.0.3&q=80&w=1080);
+  background-size: cover;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.section {
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+}
+.section .main-text {
+  display: flex;
+}
+.section .main-text .side {
+  display: block;
+  width: 50%;
+  height: 550px;
+}
+.section .main-text .side-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section .main-text .side-left {
+  padding: 100px 400px;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+.section .main-text .side-left h1 {
+  font-size: 5em;
+}
+.section .main-text .side-left h3 {
+  font-size: 1.5em;
+  color: grey;
+}
+.section .main-text .side-left .buttons {
+  display: flex;
+  gap: 10px;
+}
+.section .main-text .side-left .buttons .download-btn {
+  transition-duration: 250ms;
+  color: white;
+  border-radius: 25px;
+  border: 0;
+  padding: 5px 15px;
+  background: linear-gradient(110deg, rgba(0, 205, 0, 0.5), rgba(0, 60, 0, 0.5));
+}
+.section .main-text .side-left .buttons .download-btn:hover {
+  background: linear-gradient(110deg, rgba(0, 205, 0, 0.7), rgba(0, 60, 0, 0.7));
+}
+.section .main-text .side-left .buttons .download-unstable-btn {
+  color: white;
+  border-radius: 25px;
+  border: 0;
+  padding: 5px 15px;
+  background: linear-gradient(-30deg, rgba(0, 106, 205, 0.5), rgba(0, 19, 60, 0.5));
+}
+.section .main-text .side-left .buttons .download-unstable-btn:hover {
+  background: linear-gradient(-30deg, rgba(0, 106, 205, 0.7), rgba(0, 19, 60, 0.7));
+}
+.section .main-text pre {
+  font-family: monospace;
+}
