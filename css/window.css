@@ -75,3 +75,102 @@
 .mac-term .main-content .pre-content .blue {
   color: dodgerBlue;
 }
+
+.cmd-term {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 7px;
+  width: 500px;
+  height: 300px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+.cmd-term .titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background: white;
+  height: 30px;
+  margin-bottom: 10px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.cmd-term .titlebar .left {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 5px;
+  font-family: sans-serif;
+}
+.cmd-term .titlebar .left img {
+  height: 15px;
+}
+.cmd-term .titlebar .left span {
+  font-size: 0.8em;
+  color: black;
+}
+.cmd-term .titlebar .left {
+  color: black;
+  width: 10000px;
+}
+.cmd-term .titlebar .middle {
+  text-align: center;
+  padding: 0;
+  justify-content: center;
+  color: black;
+  text-align: left;
+}
+.cmd-term .titlebar .middle span {
+  color: black;
+  text-align: left;
+}
+.cmd-term .titlebar .container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 2em;
+  padding: 0px 20px;
+  width: 33%;
+  color: white;
+  font-size: 1em;
+}
+.cmd-term .titlebar .container .titlebar-btn {
+  transition-duration: 100ms;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  border: 0;
+  padding: 0;
+}
+.cmd-term .titlebar .container .titlebar-btn:hover {
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.4) inset;
+}
+.cmd-term .titlebar .container .minimize {
+  background: #ffbe08;
+}
+.cmd-term .titlebar .container .maximize {
+  background: #17ca30;
+}
+.cmd-term .titlebar .container .close {
+  background: #ff6245;
+}
+.cmd-term .main-content {
+  width: 100%;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+.cmd-term .main-content iframe {
+  border-radius: 10px;
+}
+.cmd-term .main-content .pre-content {
+  white-space: pre;
+  font-family: monospace;
+}
+.cmd-term .main-content .pre-content .green {
+  color: rgb(0, 184, 0);
+}
+.cmd-term .main-content .pre-content .blue {
+  color: dodgerBlue;
+}

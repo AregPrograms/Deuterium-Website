@@ -97,3 +97,127 @@
         }
     }
 }
+
+.cmd-term {
+    background: rgb(0, 0, 0, 0.55);
+    border-radius: 7px;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 0;
+
+    & .titlebar {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        background: white;
+
+        & .left { 
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            gap: 5px;
+            font-family: sans-serif;
+
+            & img {
+                height: 15px;
+            }
+            
+            & span {
+                font-size: 0.8em;
+                color: black;
+            }
+        }
+
+        height: 30px;
+
+        //background: rgba(15, 15, 15, 0.2);
+        margin-bottom: 10px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+
+        & .left {
+            color: black;
+            width: 10000px
+        }
+
+        & .middle {
+            text-align: center;
+            padding: 0;
+            justify-content: center;
+            color: black;
+            text-align: left;
+
+            & span {
+                color: black;
+                text-align: left;
+            }
+        }
+
+        & .container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 2em;
+            padding: 0px 20px;
+            width: 33%;
+            color: white;
+            font-size: 1em;
+
+            & .titlebar-btn {
+                transition-duration: 100ms;
+                display: block;
+                width: 15px;
+                height: 15px;
+                border-radius: 15px;
+                border: 0;
+                padding: 0;
+
+                &:hover {
+                    box-shadow: 0 0 3px 3px rgb(0, 0, 0, 0.4) inset;
+                }
+            }
+
+            & .minimize {
+                background: #ffbe08;
+            }
+
+            & .maximize {
+                background: #17ca30;
+            }
+
+            & .close {
+                background: #ff6245;
+            }
+        }
+    }
+
+    & .main-content {
+        width: 100%;
+        padding: 10px;
+        padding-top: 0;
+        padding-bottom: 5px;
+
+        
+
+        & iframe {
+            border-radius: 10px;
+        }
+
+        & .pre-content {
+            white-space: pre;
+            font-family: monospace;
+
+            & .green {
+                color: rgb(0, 184, 0);
+            }
+
+            & .blue {
+                color: dodgerBlue;
+            }
+
+            
+        }
+    }
+}
